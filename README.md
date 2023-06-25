@@ -1,3 +1,3 @@
 # edspert_flutter_book_store
 
-A new Flutter project.
+Edspert Flutter Book Store App Tugas 2
