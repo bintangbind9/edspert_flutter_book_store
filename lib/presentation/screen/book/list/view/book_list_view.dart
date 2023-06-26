@@ -97,9 +97,10 @@ class BookListView extends StatelessWidget {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Image.network(
-                                              book.image ??
-                                                  'assets/photos/no_book_image.png',
+                                            FadeInImage.assetNetwork(
+                                              fadeInDuration: const Duration(seconds: 1),
+                                              image: book.image ?? 'assets/photos/no_book_image.png',
+                                              placeholder: 'assets/photos/no_book_image.png',
                                               fit: BoxFit.cover,
                                               height: 60,
                                               width: 60,

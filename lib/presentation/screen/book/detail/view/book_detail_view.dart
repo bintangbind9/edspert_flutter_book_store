@@ -43,8 +43,9 @@ class BookDetailView extends StatelessWidget {
                       color: colorPrimary,
                       child: FlexibleSpaceBar(
                         // title: Text(book.title ?? 'No Title'),
-                        background: Image.network(
-                            book.image ?? 'assets/photos/no_book_image.png',
+                        background: FadeInImage.assetNetwork(
+                            image: book.image ?? 'assets/photos/no_book_image.png',
+                            placeholder: 'assets/photos/no_book_image.png',
                             fit: BoxFit.contain),
                         stretchModes: const [StretchMode.zoomBackground],
                       ),
